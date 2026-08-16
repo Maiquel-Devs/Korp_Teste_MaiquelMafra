@@ -10,7 +10,11 @@ builder.Services.AddDbContext<FaturamentoDbContext>(options =>
 
 builder.Services.AddHttpClient("EstoqueService", client =>
 {
-    client.BaseAddress = new Uri(builder.Configuration["ServicesUrls:EstoqueApi"] ?? "https://localhost:7001");
+    var url = builder.Configuration["ServicesUrls:EstoqueApi"]
+              ?? builder.Configuration["Services:EstoqueServiceUrl"]
+              ?? "https://localhost:7045";
+
+    client.BaseAddress = new Uri(url);
 });
 
 builder.Services.AddCors(options =>
@@ -28,11 +32,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAngular");

@@ -1,0 +1,3 @@
+https://localhost:7045/swagger/index         Estoque
+
+https://localhost:5001/swagger/index.html   Faturamento

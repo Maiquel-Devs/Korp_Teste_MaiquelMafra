@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path="docker-compose.yml" />
+    <File Path="TextFile1.txt" />
+  </Folder>
   <Project Path="FaturamentoService.Api/FaturamentoService.Api.csproj" Id="f0ef1f5e-ba68-4e42-831b-6510af5dee67" />
   <Project Path="Korp.SistemaNotas/EstoqueService.Api.csproj" Id="e8ac5714-5782-4f3d-bc7a-970e863c769c" />
 </Solution>
