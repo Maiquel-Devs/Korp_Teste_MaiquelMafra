@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Korp.SistemaNotas\\EstoqueService.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FaturamentoService.Api\\FaturamentoService.Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

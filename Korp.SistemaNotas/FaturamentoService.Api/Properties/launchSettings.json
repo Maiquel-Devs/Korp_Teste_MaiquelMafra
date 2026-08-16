@@ -1,0 +1,15 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost,1433;Database=FaturamentoDb;User Id=sa;Password=SuaSenhaForte123!;TrustServerCertificate=True;"
+  },
+  "ServicesUrls": {
+    "EstoqueApi": "https://localhost:7001"
+  }
+}

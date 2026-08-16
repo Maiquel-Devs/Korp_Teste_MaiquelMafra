@@ -1,0 +1,6 @@
+@Korp.SistemaNotas_HostAddress = http://localhost:5031
+
+GET {{Korp.SistemaNotas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
