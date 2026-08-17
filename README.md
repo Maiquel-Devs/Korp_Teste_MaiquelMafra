@@ -203,7 +203,9 @@ Esse comando sobe o frontend, os dois microsserviços e os respectivos bancos de
 
 ## 🎬 Demonstração em Vídeo
 
-> [INSERIR O LINK DO VÍDEO NO GOOGLE DRIVE / ONE DRIVE AQUI]
+O vídeo demonstrando o funcionamento do sistema, a arquitetura de microsserviços e a explicação do código pode ser acessado no link abaixo:
+
+👉 [Assistir à demonstração no Google Drive](https://drive.google.com/file/d/1Myic9J9brfj2Y5Uq4orGAHgJwnyjtqd8/view?usp=sharing)
 
 ---
 
