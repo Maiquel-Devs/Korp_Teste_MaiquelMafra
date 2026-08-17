@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8AC5714-5782-4F3D-BC7A-970E863C769C}|Korp.SistemaNotas\\EstoqueService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\korp.sistemanotas\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8AC5714-5782-4F3D-BC7A-970E863C769C}|Korp.SistemaNotas\\EstoqueService.Api.csproj|solutionrelative:korp.sistemanotas\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8AC5714-5782-4F3D-BC7A-970E863C769C}|Korp.SistemaNotas\\EstoqueService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\korp.sistemanotas\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E8AC5714-5782-4F3D-BC7A-970E863C769C}|Korp.SistemaNotas\\EstoqueService.Api.csproj|solutionrelative:korp.sistemanotas\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\faturamentoservice.api\\controllers\\notasfiscaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|solutionrelative:faturamentoservice.api\\controllers\\notasfiscaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\faturamentoservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|solutionrelative:faturamentoservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\TextFile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|solutionrelative:TextFile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\API.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|solutionrelative:API.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAADwv4IAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T00:11:53.875Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\Korp.SistemaNotas\\Dockerfile",
+              "RelativeDocumentMoniker": "Korp.SistemaNotas\\Dockerfile",
+              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\Korp.SistemaNotas\\Dockerfile",
+              "RelativeToolTip": "Korp.SistemaNotas\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-17T03:00:41.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NotasFiscaisController.cs",
-              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
-              "RelativeDocumentMoniker": "FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
-              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
-              "RelativeToolTip": "FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAmwHoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-16T23:57:13.058Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "FaturamentoService.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Dockerfile",
+              "RelativeToolTip": "FaturamentoService.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-17T03:00:33.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TextFile1.txt",
-              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\TextFile1.txt",
-              "RelativeDocumentMoniker": "TextFile1.txt",
-              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\TextFile1.txt",
-              "RelativeToolTip": "TextFile1.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-08-17T03:00:05.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "API.txt",
+              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\API.txt",
+              "RelativeDocumentMoniker": "API.txt",
+              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\API.txt",
+              "RelativeToolTip": "API.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-08-16T19:08:25.519Z",
+              "WhenOpened": "2026-08-17T03:00:00.595Z",
               "EditorCaption": ""
             }
           ]

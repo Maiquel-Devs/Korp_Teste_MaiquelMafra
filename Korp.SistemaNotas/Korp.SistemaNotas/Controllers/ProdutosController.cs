@@ -5,8 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EstoqueService.Api.Controllers;
 
+/// <summary>
+/// Controlador responsável pelo gerenciamento de produtos e movimentação de estoque.
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
+[Produces("application/json")]
 public class ProdutosController : ControllerBase
 {
     private readonly EstoqueDbContext _context;
@@ -16,13 +20,28 @@ public class ProdutosController : ControllerBase
         _context = context;
     }
 
+    /// <summary>
+    /// Obtém a listagem completa de produtos cadastrados.
+    /// </summary>
+    /// <returns>Lista com todos os produtos e seus respectivos saldos.</returns>
+    /// <response code="200">Lista de produtos retornada com sucesso.</response>
     [HttpGet]
+    [ProducesResponseType(typeof(IEnumerable<Produto>), StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
     {
         return await _context.Produtos.AsNoTracking().ToListAsync();
     }
 
+    /// <summary>
+    /// Busca um produto específico pelo seu identificador (ID).
+    /// </summary>
+    /// <param name="id">Identificador único do produto.</param>
+    /// <returns>Dados detalhados do produto consultado.</returns>
+    /// <response code="200">Produto encontrado com sucesso.</response>
+    /// <response code="404">Produto não encontrado para o ID informado.</response>
     [HttpGet("{id:int}")]
+    [ProducesResponseType(typeof(Produto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<Produto>> GetProduto(int id)
     {
         var produto = await _context.Produtos.FindAsync(id);
@@ -32,7 +51,16 @@ public class ProdutosController : ControllerBase
         return Ok(produto);
     }
 
+    /// <summary>
+    /// Cadastra um novo produto no estoque.
+    /// </summary>
+    /// <param name="produto">Objeto contendo os dados do novo produto (Código, Descrição, Saldo).</param>
+    /// <returns>O produto cadastrado com seu ID gerado.</returns>
+    /// <response code="201">Produto cadastrado com sucesso.</response>
+    /// <response code="400">Saldo inicial negativo ou código de produto já existente.</response>
     [HttpPost]
+    [ProducesResponseType(typeof(Produto), StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Produto>> CreateProduto([FromBody] Produto produto)
     {
         if (produto.Saldo < 0)
@@ -48,7 +76,18 @@ public class ProdutosController : ControllerBase
         return CreatedAtAction(nameof(GetProduto), new { id = produto.Id }, produto);
     }
 
+    /// <summary>
+    /// Atualiza os dados de um produto existente.
+    /// </summary>
+    /// <param name="id">Identificador único do produto na URL.</param>
+    /// <param name="produtoAtualizado">Objeto contendo as novas informações do produto.</param>
+    /// <response code="204">Produto atualizado com sucesso.</response>
+    /// <response code="400">Divergência de IDs, saldo negativo ou código já em uso por outro produto.</response>
+    /// <response code="404">Produto não encontrado.</response>
     [HttpPut("{id:int}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> UpdateProduto(int id, [FromBody] Produto produtoAtualizado)
     {
         if (id != produtoAtualizado.Id)
@@ -74,7 +113,15 @@ public class ProdutosController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// Exclui um produto do estoque pelo seu ID.
+    /// </summary>
+    /// <param name="id">Identificador único do produto.</param>
+    /// <response code="204">Produto removido com sucesso.</response>
+    /// <response code="404">Produto não encontrado.</response>
     [HttpDelete("{id:int}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> DeleteProduto(int id)
     {
         var produto = await _context.Produtos.FindAsync(id);
@@ -87,13 +134,23 @@ public class ProdutosController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// Realiza a baixa em lote de estoque para os itens informados (utilizado no fechamento de Nota Fiscal).
+    /// </summary>
+    /// <param name="itens">Lista contendo os IDs dos produtos e as quantidades a debitar.</param>
+    /// <response code="200">Baixa executada com sucesso.</response>
+    /// <response code="400">Lista vazia ou saldo insuficiente para um ou mais itens.</response>
+    /// <response code="404">Um dos produtos informados não foi encontrado.</response>
     [HttpPost("baixar-estoque")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> BaixarEstoque([FromBody] List<BaixaEstoqueItemDto> itens)
     {
         if (itens == null || !itens.Any())
             return BadRequest(new { mensagem = "A lista de itens para baixa não pode ser vazia." });
 
-        // Validação de saldo prévia
+        // Validação prévia de saldo
         foreach (var item in itens)
         {
             var produto = await _context.Produtos.FindAsync(item.ProdutoId);
@@ -124,8 +181,20 @@ public class ProdutosController : ControllerBase
     }
 }
 
+/// <summary>
+/// Objeto de transferência de dados para requisição de baixa de estoque.
+/// </summary>
 public class BaixaEstoqueItemDto
 {
+    /// <summary>
+    /// Identificador único do produto no estoque.
+    /// </summary>
+    /// <example>1</example>
     public int ProdutoId { get; set; }
+
+    /// <summary>
+    /// Quantidade a ser debitada do saldo em estoque.
+    /// </summary>
+    /// <example>2.5</example>
     public decimal Quantidade { get; set; }
 }

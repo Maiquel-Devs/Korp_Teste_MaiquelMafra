@@ -1,15 +1,64 @@
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: korp_sqlserver
-    user: "0:0"
+    container_name: sqlserver-db
+    user: root  
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=SuaSenhaForte123!
+      - MSSQL_SA_PASSWORD=YourStrong@Pass123!
     ports:
-      - "1433:1433"
+      - "14333:1433"
     volumes:
-      - mssql_data:/var/opt/mssql/data
+      - sql_data:/var/opt/mssql/data
+    networks:
+      - app-network
+
+  estoque-api:
+    build:
+      context: ./Korp.SistemaNotas
+      dockerfile: Dockerfile
+    container_name: estoque-api
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=EstoqueDb;User Id=sa;Password=YourStrong@Pass123!;TrustServerCertificate=True;Encrypt=False;
+    ports:
+      - "5000:8080"
+    depends_on:
+      - sqlserver
+    networks:
+      - app-network
+
+  faturamento-api:
+    build:
+      context: ./FaturamentoService.Api
+      dockerfile: Dockerfile
+    container_name: faturamento-api
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=FaturamentoDb;User Id=sa;Password=YourStrong@Pass123!;TrustServerCertificate=True;Encrypt=False;
+      - ServicesUrls__EstoqueApi=http://estoque-api:8080
+    ports:
+      - "5100:8080"
+    depends_on:
+      - sqlserver
+      - estoque-api
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./korp-sistema-notas-web
+      dockerfile: Dockerfile
+    container_name: frontend-app
+    ports:
+      - "4200:80"
+    depends_on:
+      - estoque-api
+      - faturamento-api
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
 
 volumes:
-  mssql_data:
+  sql_data:

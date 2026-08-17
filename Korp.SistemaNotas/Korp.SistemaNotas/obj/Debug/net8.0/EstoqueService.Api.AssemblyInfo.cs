@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstoqueService.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba213ea8d6c328ec8ebe1e7192877c15d8c8b457")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42984b0df112644a57d88d9370075d574ddb7773")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstoqueService.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstoqueService.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
