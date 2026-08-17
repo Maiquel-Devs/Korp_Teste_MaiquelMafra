@@ -41,8 +41,20 @@
         <th mat-header-cell *matHeaderCellDef> Ações </th>
         <td mat-cell *matCellDef="let n">
           @if (n.status === 1) {
-            <button mat-stroked-button color="warn" (click)="fecharNotaFiscal(n.id)">
-              <mat-icon>lock</mat-icon> Fechar
+            <button 
+              mat-stroked-button 
+              color="warn" 
+              (click)="fecharNotaFiscal(n.id)"
+              [disabled]="processandoId() === n.id">
+              <span style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                @if (processandoId() === n.id) {
+                  <mat-spinner diameter="16" mode="indeterminate"></mat-spinner>
+                  <span>Processando...</span>
+                } @else {
+                  <mat-icon>lock</mat-icon>
+                  <span>Fechar</span>
+                }
+              </span>
             </button>
           } @else {
             <span class="texto-concluido">Processada</span>

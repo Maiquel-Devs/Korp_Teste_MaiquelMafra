@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Itens de Solução/">
+    <File Path=".gitignore" />
     <File Path="API.txt" />
     <File Path="docker-compose.yml" />
   </Folder>

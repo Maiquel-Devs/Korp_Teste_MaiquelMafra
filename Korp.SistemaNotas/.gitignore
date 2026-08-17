@@ -1,0 +1,24 @@
+## Build and Visual Studio files
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Node & Angular
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## Docker and environment
+.env.local
+*.log
