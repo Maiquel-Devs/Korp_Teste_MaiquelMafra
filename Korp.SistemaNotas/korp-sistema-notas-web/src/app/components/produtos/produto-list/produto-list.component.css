@@ -1,0 +1,19 @@
+.card-container {
+  padding: 1.5rem;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.alerta-baixo {
+  color: #d32f2f;
+  font-weight: bold;
+}

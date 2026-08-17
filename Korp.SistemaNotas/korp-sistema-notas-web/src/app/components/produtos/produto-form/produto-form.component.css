@@ -1,0 +1,17 @@
+.form-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}

@@ -1,0 +1,53 @@
+<mat-card class="form-card card-container">
+  <h2>Emitir Nota Fiscal</h2>
+
+  <form [formGroup]="form" (ngSubmit)="salvar()">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Número Sequencial</mat-label>
+      <input matInput type="number" formControlName="numeroSequencial" placeholder="Ex: 1002">
+      @if (form.get('numeroSequencial')?.hasError('required')) {
+        <mat-error>Número é obrigatório</mat-error>
+      }
+    </mat-form-field>
+
+    <div class="itens-header">
+      <h3>Itens da Nota</h3>
+      <button mat-stroked-button color="primary" type="button" (click)="adicionarItem()">
+        <mat-icon>add</mat-icon> Adicionar Item
+      </button>
+    </div>
+
+    <div formArrayName="itens">
+      @for (item of itens.controls; track $index; let i = $index) {
+        <div [formGroupName]="i" class="item-row">
+          <mat-form-field appearance="outline" class="item-select">
+            <mat-label>Produto</mat-label>
+            <mat-select formControlName="produtoId">
+              @for (p of produtos; track p.id) {
+                <mat-option [value]="p.id">
+                  {{ p.codigo }} - {{ p.descricao }} (Saldo: {{ p.saldo }})
+                </mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="item-qtd">
+            <mat-label>Qtd</mat-label>
+            <input matInput type="number" formControlName="quantidade" min="1">
+          </mat-form-field>
+
+          <button mat-icon-button color="warn" type="button" (click)="removerItem(i)" [disabled]="itens.length === 1">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      }
+    </div>
+
+    <div class="actions">
+      <button mat-button type="button" routerLink="/notas-fiscais">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+        Emitir Nota
+      </button>
+    </div>
+  </form>
+</mat-card>

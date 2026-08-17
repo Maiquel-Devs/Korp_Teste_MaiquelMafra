@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaturamentoService.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc6c6c0133a193e6998feda042ffe613751b2ab1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba213ea8d6c328ec8ebe1e7192877c15d8c8b457")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaturamentoService.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaturamentoService.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

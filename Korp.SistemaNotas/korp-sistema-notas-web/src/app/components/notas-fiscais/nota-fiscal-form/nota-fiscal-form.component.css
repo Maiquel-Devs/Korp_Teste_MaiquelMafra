@@ -1,0 +1,41 @@
+.form-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.itens-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-select {
+  flex: 3;
+}
+
+.item-qtd {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}

@@ -74,6 +74,19 @@ public class ProdutosController : ControllerBase
         return NoContent();
     }
 
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> DeleteProduto(int id)
+    {
+        var produto = await _context.Produtos.FindAsync(id);
+        if (produto == null)
+            return NotFound(new { mensagem = $"Produto com ID {id} não encontrado." });
+
+        _context.Produtos.Remove(produto);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
     [HttpPost("baixar-estoque")]
     public async Task<IActionResult> BaixarEstoque([FromBody] List<BaixaEstoqueItemDto> itens)
     {

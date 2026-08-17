@@ -1,0 +1,57 @@
+<mat-card class="card-container">
+  <div class="header-actions">
+    <h2>Faturamento - Notas Fiscais</h2>
+    <button mat-raised-button color="primary" routerLink="/notas-fiscais/nova">
+      <mat-icon>add</mat-icon> Nova Nota Fiscal
+    </button>
+  </div>
+
+  <div class="table-responsive">
+    <table mat-table [dataSource]="notas()" class="mat-elevation-z2 full-width-table">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let n"> {{ n.id }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="numeroSequencial">
+        <th mat-header-cell *matHeaderCellDef> Sequencial </th>
+        <td mat-cell *matCellDef="let n"> <strong>#{{ n.numeroSequencial }}</strong> </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dataCriacao">
+        <th mat-header-cell *matHeaderCellDef> Data </th>
+        <td mat-cell *matCellDef="let n"> {{ n.dataCriacao | date:'dd/MM/yyyy HH:mm' }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> Status </th>
+        <td mat-cell *matCellDef="let n">
+          <span class="badge-status" [ngClass]="n.status === 1 ? 'badge-aberta' : 'badge-fechada'">
+            {{ n.status === 1 ? 'Aberta' : 'Fechada' }}
+          </span>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="totalItens">
+        <th mat-header-cell *matHeaderCellDef> Qtd Itens </th>
+        <td mat-cell *matCellDef="let n"> {{ n.itens?.length || 0 }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef> Ações </th>
+        <td mat-cell *matCellDef="let n">
+          @if (n.status === 1) {
+            <button mat-stroked-button color="warn" (click)="fecharNotaFiscal(n.id)">
+              <mat-icon>lock</mat-icon> Fechar
+            </button>
+          } @else {
+            <span class="texto-concluido">Processada</span>
+          }
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="colunasExibidas"></tr>
+      <tr mat-row *matRowDef="let row; columns: colunasExibidas;"></tr>
+    </table>
+  </div>
+</mat-card>

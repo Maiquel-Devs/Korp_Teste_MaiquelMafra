@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2CFC64D-97BC-4DEF-BC32-CCC795EDA9AC}|Itens de Solu\u00E7\u00E3o{E2CFC64D-97BC-4DEF-BC32-CCC795EDA9AC}|C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\TextFile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E2CFC64D-97BC-4DEF-BC32-CCC795EDA9AC}|Itens de Solu\u00E7\u00E3o{E2CFC64D-97BC-4DEF-BC32-CCC795EDA9AC}|solutionrelative:TextFile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E8AC5714-5782-4F3D-BC7A-970E863C769C}|Korp.SistemaNotas\\EstoqueService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\korp.sistemanotas\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8AC5714-5782-4F3D-BC7A-970E863C769C}|Korp.SistemaNotas\\EstoqueService.Api.csproj|solutionrelative:korp.sistemanotas\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\faturamentoservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|solutionrelative:faturamentoservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\faturamentoservice.api\\controllers\\notasfiscaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|solutionrelative:faturamentoservice.api\\controllers\\notasfiscaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|c:\\users\\maiquel\\documents\\estudos\\korp_teste_maiquelmafra\\korp.sistemanotas\\faturamentoservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F0EF1F5E-BA68-4E42-831B-6510AF5DEE67}|FaturamentoService.Api\\FaturamentoService.Api.csproj|solutionrelative:faturamentoservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\TextFile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|Itens de Solu\u00E7\u00E3o{60CA0214-88C6-8651-7B8B-6C0F6C5892CB}|solutionrelative:TextFile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "FaturamentoService.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\appsettings.json",
-              "RelativeToolTip": "FaturamentoService.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-16T19:27:50.032Z",
+              "DocumentIndex": 0,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Korp.SistemaNotas\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAADwv4IAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T00:11:53.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Program.cs",
-              "RelativeDocumentMoniker": "FaturamentoService.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Program.cs",
-              "RelativeToolTip": "FaturamentoService.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAKAAAAAAAAAA==",
+              "Title": "NotasFiscaisController.cs",
+              "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
+              "RelativeDocumentMoniker": "FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
+              "ToolTip": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
+              "RelativeToolTip": "FaturamentoService.Api\\Controllers\\NotasFiscaisController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAmwHoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-16T19:23:04.016Z",
+              "WhenOpened": "2026-08-16T23:57:13.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TextFile1.txt",
               "DocumentMoniker": "C:\\Users\\Maiquel\\Documents\\Estudos\\Korp_Teste_MaiquelMafra\\Korp.SistemaNotas\\TextFile1.txt",
               "RelativeDocumentMoniker": "TextFile1.txt",

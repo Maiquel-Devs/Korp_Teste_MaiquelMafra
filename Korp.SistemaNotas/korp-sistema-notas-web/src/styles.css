@@ -1,0 +1,179 @@
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f5f6fa;
+  color: #333333;
+}
+
+/* Toolbar Superior Responsiva */
+mat-toolbar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  height: auto !important;
+  min-height: 56px;
+  padding: 8px 16px !important;
+  gap: 8px;
+}
+
+/* Card Container com Contenção Estrita */
+.card-container {
+  width: calc(100% - 32px);
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.header-actions h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+}
+
+/* Container de Tabela com Scroll Responsivo */
+.table-responsive {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.full-width-table {
+  width: 100%;
+  min-width: 580px;
+  border-collapse: collapse;
+}
+
+.full-width-table th, 
+.full-width-table td {
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+/* Centralização de Cabeçalhos e Células */
+th.mat-column-saldo,
+td.mat-column-saldo,
+th.mat-column-totalItens,
+td.mat-column-totalItens,
+th.mat-column-status,
+td.mat-column-status,
+th.mat-column-acoes,
+td.mat-column-acoes {
+  text-align: center !important;
+}
+
+td.mat-column-acoes {
+  white-space: nowrap;
+}
+
+td.mat-column-acoes button,
+td.mat-column-acoes span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Formulários Flexíveis */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-row mat-form-field {
+  flex: 1 1 240px;
+  width: 100%;
+}
+
+/* Badges de Status Modernos */
+.badge-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.badge-aberta {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  border: 1px solid #bbdefb;
+}
+
+.badge-fechada {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.texto-concluido {
+  color: #2e7d32;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+
+.alerta-baixo {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Ajustes Mobile */
+@media (max-width: 600px) {
+  mat-toolbar {
+    justify-content: center;
+  }
+
+  .card-container {
+    width: calc(100% - 16px);
+    margin: 8px auto;
+    padding: 12px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .header-actions button {
+    width: 100%;
+  }
+
+  .full-width-table th, 
+  .full-width-table td {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+}
