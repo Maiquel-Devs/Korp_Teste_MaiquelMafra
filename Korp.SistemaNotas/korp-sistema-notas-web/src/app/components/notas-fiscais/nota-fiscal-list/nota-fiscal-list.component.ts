@@ -29,7 +29,7 @@ export class NotaFiscalListComponent implements OnInit {
 
   notas = signal<NotaFiscal[]>([]);
   processandoId = signal<number | null>(null);
-  colunasExibidas: string[] = ['id', 'numeroSequencial', 'dataCriacao', 'status', 'totalItens', 'acoes'];
+  colunasExibidas: string[] = ['numeroSequencial', 'dataCriacao', 'status', 'totalItens', 'acoes'];
 
   ngOnInit(): void {
     this.carregarNotas();
@@ -44,11 +44,15 @@ export class NotaFiscalListComponent implements OnInit {
     });
   }
 
-  fecharNotaFiscal(id: number): void {
-    if (confirm(`Deseja realmente fechar a Nota Fiscal ID ${id}? O estoque será atualizado.`)) {
-      this.processandoId.set(id);
+  fecharNotaFiscal(nota: NotaFiscal): void {
+    if (!nota.id) {
+      return;
+    }
 
-      this.notaService.fecharNota(id).subscribe({
+    if (confirm(`Deseja realmente fechar a Nota Fiscal #${nota.numeroSequencial}? O estoque será atualizado.`)) {
+      this.processandoId.set(nota.id);
+
+      this.notaService.fecharNota(nota.id).subscribe({
         next: (res) => {
           this.processandoId.set(null);
           alert(res.mensagem || 'Nota fechada com sucesso!');
